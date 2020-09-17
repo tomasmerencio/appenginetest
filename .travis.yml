@@ -4,6 +4,7 @@ python:
   - 3.8
 install:
   - pip install -r requirements.txt
+script: py.test mitest.py -v
 deploy:
   provider: gae
   keyfile: client-secret.json.enc
